@@ -1,2 +1,21 @@
 # .gitignore 파일 내부
+# 제외 파일 (개인 정보 포함 파일)
 .env
+config.json
+
+# 제외 폴더
+# 1. GUI 파일을 실행 시, 결과 저장 폴더
+crawled_html/
+HTML_Output/
+Logs/
+
+# 2. EXE 관련 폴더 및 파일(Github에는 불필요 판단)
+기존 exe/
+이전 파일/
+build/
+dist/
+Newsletter_Create_App_2026.spec
+
+# 3. requirements.txt 내 라이브러리의 wheel 파일 (업무망 작업을 위한 파일)
+wheelhouse/
+wheelhouse.zip
